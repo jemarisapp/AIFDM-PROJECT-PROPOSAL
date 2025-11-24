@@ -14,13 +14,13 @@ We propose a resource-efficient and transparent detection pipeline that learns h
 
 ## Technical Workflow (The Learning Loop)
 
-### Phase 1: The Cold Start (Initial Knowledge) 🏁
+### Phase 1: The Cold Start (Initial Knowledge)
 
 1. Start with a small "Seed Set" of pre-labeled data (500 images: 250 real, 250 fake)
 2. Train baseline CNN on this initial set → achieves ~70-72% accuracy
 3. The model is now ready to learn from additional data
 
-### Phase 2: The Active Learning Loop (Smart Data Selection) 🔄
+### Phase 2: The Active Learning Loop (Smart Data Selection)
 
 This loop repeats to make the model smarter without labeling everything:
 
@@ -34,7 +34,7 @@ This loop repeats to make the model smarter without labeling everything:
 4. **Retrain**: CNN fine-tunes on the expanded training set
 5. **Reward**: The Agent receives a reward if accuracy improves, learning which strategy is best
 
-### Phase 3: Deployment (User-Facing Product) 🚀
+### Phase 3: Deployment (User-Facing Product)
 
 1. User uploads image
 2. System outputs:
